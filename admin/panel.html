@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Add New Tool</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Common CSS -->
+</head>
+<body>
+    <main>
+        <h2>Add New Tool</h2>
+        <form id="toolForm">
+            <label for="toolName">Tool Name:</label>
+            <input type="text" id="toolName" name="toolName" required>
+
+            <label for="toolSlug">Tool URL Slug (e.g., text-reverser, no spaces):</label>
+            <input type="text" id="toolSlug" name="toolSlug" required pattern="[a-z0-9-]+">
+            
+            <label for="toolDescription">Tool Description:</label>
+            <textarea id="toolDescription" name="toolDescription" rows="3" required></textarea>
+
+            <label for="htmlFile">Tool HTML File:</label>
+            <input type="file" id="htmlFile" name="htmlFile" accept=".html" required>
+
+            <label for="zipFile">Assets ZIP File (CSS, JS, Images - optional):</label>
+            <input type="file" id="zipFile" name="zipFile" accept=".zip">
+
+            <button type="submit" id="submitBtn">Add Tool</button>
+        </form>
+        <div id="message"></div>
+    </main>
+
+    <script>
+        // 👉=== YAHAN APNA PASSWORD BADLEIN ===👈
+        const password = "GITHUB 1224@a"; 
+        // ===================================
+        
+        // (Baaki ka script code pehle jaisa hi rahega)
+    </script>
+</body>
+</html>
